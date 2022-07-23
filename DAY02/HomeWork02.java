@@ -30,12 +30,12 @@ public class HomeWork02 {
         System.out.println("Khoảng cách của bạn là: " + distant + "km");
         
         // nhập thời gian bắt đầu, gán vào biên startTimeStr
-        System.out.println("Nhập thời gian bắt đầu (theo mẫu:dd-MM-yyyy HH:mm):  ");
+        System.out.println("Nhập thời gian bắt đầu (theo mẫu:Ngày-Tháng-Năm Giờ:Phút):  ");
         startTimeStr = scanner.nextLine();
         
         
         // nhập thời gian kết thúc, gán vào biến finishTimeStr
-        System.out.print("Nhập thời gian kết thúc (theo mẫu dd-MM-yyyy HH:mm): ");
+        System.out.print("Nhập thời gian kết thúc (theo mẫu Ngày-Tháng-Năm Giờ:Phút): ");
         finishTimeStr = scanner.nextLine();
 
         scanner.close();
