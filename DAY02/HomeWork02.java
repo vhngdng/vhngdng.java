@@ -51,7 +51,7 @@ public class HomeWork02 {
         
         Duration duration = Duration.between(startTime, finishTime);
         Double durationHour = Double.valueOf(duration.toMinutes());
-        double durationToHour = (durationHour/60);
+        double durationToHour = durationHour / 60;
         
 
         
