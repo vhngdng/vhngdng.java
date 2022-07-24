@@ -10,6 +10,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Formatter;
 import java.util.Scanner;
+import java.util.PrimitiveIterator.OfDouble;
 
 import javax.sound.sampled.LineUnavailableException;
 
@@ -19,7 +20,7 @@ public class HomeWork02 {
     double distant = 0.0;
         String startTimeStr = "";
         String finishTimeStr = "";
-        DateTimeFormatter formatTime = DateTimeFormatter.ofPattern("dd-MM-yyyy E hh:mm:ss");
+        
         
 
         Scanner scanner = new Scanner(System.in);
@@ -47,12 +48,19 @@ public class HomeWork02 {
         LocalDateTime finishTime = LocalDateTime.parse(finishTimeStr, formatter);
         
         
-
+        
         Duration duration = Duration.between(startTime, finishTime);
+        Double durationHour = Double.valueOf(duration.toMinutes());
+        double durationToHour = (durationHour/60);
+        
+
+        
+
         // Tính và in ra thời gian chạy của bạn
         System.out.printf("Thời gian chạy %s phút\n", duration.toMinutes());
+        System.out.println(duration.toHours());
         // Tính và in ra vận tốc trung bình của bạn (km/h)
-        System.out.printf("Vận tốc trung bình %s km/h\n", distant /duration.toHours());
+        System.out.printf("Vận tốc trung bình %s km/h\n", distant / durationToHour);
     
         
   }
