@@ -50,6 +50,7 @@ public class HomeWork02 {
         
         
         Duration duration = Duration.between(startTime, finishTime);
+        System.out.println(duration.toHours());
         Double durationHour = Double.valueOf(duration.toMinutes());
         double durationToHour = durationHour / 60;
         
