@@ -30,5 +30,4 @@ public class HomeWork03 {
 
 
 
-// Cách 2
-  
+
