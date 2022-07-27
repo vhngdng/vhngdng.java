@@ -34,8 +34,9 @@ public class HomeWork02 {
          
       }
       
-        System.out.println(primeTotal);
+        
       }
+      System.out.println("Tong 100 so nguyen to dau tien la: " + primeTotal);
     }
 
   }
