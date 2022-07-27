@@ -16,7 +16,7 @@ public class HomeWork01 {
 
         scanner.close();
         for ( int i = 1; i <= number ; i++ ){
-          System.out.println(i.toString) ;
+          System.out.println(i) ;
         }
         int sum = number * (number + 1) / 2;
         System.out.println("Tong cua cac so nguyen duong la: " + sum);
