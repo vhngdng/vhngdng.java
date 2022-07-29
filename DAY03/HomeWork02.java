@@ -11,10 +11,12 @@ public class HomeWork02 {
       num++;
       if (num < 2) {
         isPrime = false;
+
       } else if (num == 2) {
         primeCount = 1;
         System.out.println("So nguyen to la: 2");
         primeTotal = primeTotal + num;
+      
       } else if (num > 2) {
         for (int i = 2; i < num; i++) {
           int temp = num % i;
@@ -27,18 +29,15 @@ public class HomeWork02 {
             primeCount++;
             System.out.println("So nguyen to la: " + prime);
             primeTotal = primeTotal + num;
-           
+
           }
 
         }
-         
-      }
-      
-        
-      }
-      System.out.println("Tong 100 so nguyen to dau tien la: " + primeTotal);
-    }
 
+      }
+
+    }
+    System.out.println("Tong 100 so nguyen to dau tien la: " + primeTotal);
   }
 
-
+}
