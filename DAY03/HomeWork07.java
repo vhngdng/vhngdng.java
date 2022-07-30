@@ -24,12 +24,8 @@ public class HomeWork07 {
       } else {
         minute = reMainder / 60;
         int reMainderMinute = reMainder % 60;
-        if (reMainderMinute == 0) {
-          sec = 0;
-         
-        } else {
-          sec = reMainderMinute;
-        }
+        sec = reMainderMinute;
+        
       }
       System.out.printf("Thoi gian la: %02d:%02d:%02d", hour, minute, sec);
     } else {
@@ -53,11 +49,7 @@ public class HomeWork07 {
           } else {
             minute = reMainder / 60;
             int reMainderMinute = reMainder % 60;
-            if (reMainderMinute == 0) {
-              sec = 0;
-
-            } else {
-              sec = reMainderMinute;
+            sec = reMainderMinute;
             }
             System.out.printf("Thoi gian la: %02d:%02d:%02d", hour, minute, sec);
           }
@@ -67,4 +59,4 @@ public class HomeWork07 {
 
   }
   }
-}
+
