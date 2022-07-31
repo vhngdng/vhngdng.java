@@ -27,7 +27,7 @@ public class HomeWork06 {
 
       resultString += newWord;
 
-      System.out.println(newWord);
+      
 
     }
     System.out.println("Sau khi viet hoa chu cai dau tien: " + resultString);
