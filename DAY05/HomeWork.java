@@ -232,7 +232,7 @@ public class HomeWork {
             System.out.println("Nhung nhan vien co sinh nhat trong thang " + month + " la: ");
             for (j = 0; j < 5; j++) {
                 if(findBirthDayInMonth[j] != null){
-                System.out.println(findBirthDayInMonth[j].name);
+                System.out.println(findBirthDayInMonth[j].name + "\n");
                 }
             }
         } else {
@@ -249,7 +249,8 @@ public class HomeWork {
         for (int i = 0; i < 5; i++) {
             age[i] = employee[i].findAge(employee[i]);
             if (age[i] > 30) {
-                System.out.println(employee[i].name + age[i] + "");
+                System.out.println(employee[i].name);
+                System.out.println(age[i] + "tuoi");
                 System.out.println(employee[i].toString() + "\n");
             } else {
                 k++;
