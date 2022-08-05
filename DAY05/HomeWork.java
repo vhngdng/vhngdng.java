@@ -19,7 +19,7 @@ public class HomeWork {
     static Employee findMale[] = new Employee[5];
     static Employee findFeMale[] = new Employee[5];
 
-    public static int selectMonth() {
+    public static int selectMonth() {       // set cho so thang nhap vao trong khoang 0-12
 
         System.out.println("Hay nhap 1 thang bat ky");
         int month = scanner.nextInt();
@@ -98,12 +98,12 @@ public class HomeWork {
             str[i] = scanner.nextLine();
             if (Pattern.matches(patternDay, str[i])) {
                 str[i] = str[i].replace('/', '-');
-            } else { // Neu ngay sinh khong chinh xac se nhap lai
+            } else {        // Neu ngay sinh khong chinh xac se nhap lai
                 System.out.println("Thong tin khong chinh xac\nHay nhap lai [dd-MM-yyyy]: ");
 
                 str[i] = scanner.nextLine();
             }
-            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy");          
             birthDay[i] = LocalDate.parse(str[i], dtf);
 
             // Gender
@@ -153,7 +153,7 @@ public class HomeWork {
         int j = 0;
         int k = 0;
         for (int i = 0; i < 5; i++) {
-            check = employee[i].findName(keyword);
+            check = employee[i].findName(keyword);          // method findName
             if (check == true) {
 
                 findByName[j] = employee[i];
@@ -180,7 +180,7 @@ public class HomeWork {
         String findID = scanner.nextLine();
 
         for (int i = 0; i < 5; i++) {
-            check = employee[i].findID(findID);
+            check = employee[i].findID(findID);         //method findID
             if (check == true) {
                 findEmployee = employee[i];
                 break;
@@ -197,10 +197,10 @@ public class HomeWork {
 
     public static void findHighestSalary() {
         // 3 nguoi co muc luong cao nhat
-        Arrays.sort(salary);
+        Arrays.sort(salary);                       // sap xep lai nhan vien theo thu tu salary tang
         System.out.println("3 nguoi co muc luong cao nhat la");
-        for (int i = 0; i < 5; i++) {
-            if (salary[2] == employee[i].salary) { // Muc luong nguoi cao thu 3
+        for (int i = 0; i < 5; i++) {     // tao loop de thu tu duoc sap xep theo: muc luong thu 3 - muc luong thu 2 - muc luong thu nhat
+            if (salary[2] == employee[i].salary) { // Muc luong nguoi cao thu 3 
                 System.out.println("Muc luong nguoi cao thu 3 la " + employee[i].name + " " + employee[i].salary);
             }
         }
@@ -224,15 +224,15 @@ public class HomeWork {
         Employee findBirthDayInMonth[] = new Employee[5];
         for (int i = 0; i < 5; i++) {
             if (month == employee[i].findMonth()) {
-                findBirthDayInMonth[j] = employee[i];
+                findBirthDayInMonth[j] = employee[i];       // Them nhung nhan vien co ngay sinh trong thang vao array
                 j++;
             }
         }
         if (j > 0) {
             System.out.println("Nhung nhan vien co sinh nhat trong thang " + month + " la: ");
             for (j = 0; j < 5; j++) {
-                if(findBirthDayInMonth[j] != null){
-                System.out.println(findBirthDayInMonth[j].name + "\n");
+                if(findBirthDayInMonth[j] != null){         // tranh loi null pointer
+                System.out.println(findBirthDayInMonth[j].name + "\n");         
                 }
             }
         } else {
@@ -247,8 +247,8 @@ public class HomeWork {
         System.out.println("Cac nhan vien tren 30 la: ");
         int k = 0;
         for (int i = 0; i < 5; i++) {
-            age[i] = employee[i].findAge(employee[i]);
-            if (age[i] > 30) {
+            age[i] = employee[i].findAge(employee[i]);          // tinh tuoi cua nhan vien
+            if (age[i] > 30) {                                  // nhan vien tren 30
                 System.out.println(employee[i].name);
                 System.out.println(age[i] + "tuoi");
                 System.out.println(employee[i].toString() + "\n");
@@ -257,7 +257,7 @@ public class HomeWork {
             }
         }
 
-        if (k == 5) {
+        if (k == 5) {       // so luong nhan vien duoi 30
             System.out.println("Khong co nhan vien nao tren 30");
         }
 
@@ -269,12 +269,12 @@ public class HomeWork {
         int j = 0;
         int k = 0;
         for (int i = 0; i < 5; i++) {
-            if ((employee[i].gender) == (GENDER.FEMALE)) {
+            if ((employee[i].gender) == (GENDER.FEMALE)) {          // nhan vien co GENDER FEMALE
                 findFeMale[j] = employee[i];
-                j++;
-            } else {
+                j++;        // j la so nu
+            } else {                                                // con lai la nhan vien GENDER MALE
                 findMale[k] = employee[i];
-                k++;
+                k++;        // k la so nam
             }
         }
         System.out.println("So nhan vien nu la: " + j);
