@@ -292,9 +292,7 @@ public class HomeWork {
 
         // Tim va dem so nhan vien nam
 
-        for (int i = 0; i < 5; i++) {
-
-        }
+      
         System.out.println("So nhan vien nam la: " + k);
         // System.out.println("Cac nhan vien nam la: ");
 
