@@ -51,16 +51,4 @@ public class FilmList {
     public String setDirector(String director) {
         return this.director = director;
     }
-
-
-   public static boolean checkTitle(){
-    Scanner scanner = new Scanner(System.in);
-    
-    boolean result;
-
-    System.out.println("Hay nhap tu khoa");
-    String keyword = scanner.nextLine();
-    result = (filmList.getTitle().contains(keyword));
-        return result;
-   }
 }
