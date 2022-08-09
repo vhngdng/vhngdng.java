@@ -26,7 +26,6 @@ public class Student extends User {
     @Override
     public String toString() {
         //Override method toString() 
-        ;
         String text = super.toString() + " | background: " + backGround + " | " + isOnline;
 
         return text;
