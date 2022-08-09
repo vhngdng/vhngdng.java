@@ -31,7 +31,8 @@ public class Main2 {
                                 "nguyenphutrong@gmail.com", "0364234820", "online", "dang di hoc");
 
                 for (int i = 0; i < 6; i++) { // chuyen student vao user array
-                        user[i] = (User) student[i]; // using super class reference
+                        user[i] = (User) student[i]; // using super class reference and using typecasting 
+                                //creat a reference variable superclass by refering 
                 }
 
                 teacher[0] = new Teacher("gv1", "nguyen xuan nam", GENDER.MALE, User.setBirthDay("01-01-1988"),

@@ -3,16 +3,17 @@ import java.time.LocalDate;
 public class Teacher extends User {
     int yearOfExperiences;
     String speciality;
-    public Teacher(String id, String name, GENDER gender,LocalDate birthday,String email, String phoneNumber, int yearOfExperiences, String speciality){
+
+    public Teacher(String id, String name, GENDER gender, LocalDate birthday, String email, String phoneNumber,
+            int yearOfExperiences, String speciality) {
         super(id, name, gender, birthday, email, phoneNumber);
         this.yearOfExperiences = yearOfExperiences;
         this.speciality = speciality;
     }
 
-    public void setYearOfExperiences (int yearOfExperiences) {
+    public void setYearOfExperiences(int yearOfExperiences) {
         this.yearOfExperiences = yearOfExperiences;
     }
-
 
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
