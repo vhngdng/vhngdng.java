@@ -52,8 +52,8 @@ public class Main {
         series[4].setDirector("Mark Cendrowski");
 
         for (int i = 0; i < 5; i++) {
-            filmList[i] = new FilmList();
-            filmList[i + 5] = new FilmList();
+            filmList[i] = new FilmList();       //Tao filmList chua tat ca cac phim ca movie lan series
+            filmList[i + 5] = new FilmList();   //Tao filmList chua tat ca cac phim ca movie lan series
 
             // Add title for array filmList[10]
             filmList[i].setTitle(movie[i].getTitle());
@@ -67,7 +67,6 @@ public class Main {
             filmList[i].setType(movie[i].getType());
             filmList[i + 5].setType(series[i].getType());
 
-            System.out.println(filmList[i].getType());
         }
 
         // Info of film

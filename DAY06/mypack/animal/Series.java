@@ -14,9 +14,7 @@ public class Series extends FilmList{
         setEpisode(episode);
     }
 
-    public int getEpisode(int episode){
-        return this.episode = episode;
-    }
+    
 
     public double setAverageDuration(double averageDuration) {
         return this.averageDuration = averageDuration;
@@ -28,6 +26,10 @@ public class Series extends FilmList{
 
     public int setEpisode(int episode) {
         return this.episode = episode;
+    }
+
+    public int getEpisode(){
+        return this.episode;
     }
 
      public  String toString(){

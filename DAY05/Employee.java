@@ -10,11 +10,38 @@ enum GENDER {
 public class Employee {
 
     Scanner scanner;
-    public String id;
-    public String name;
-    public LocalDate birthday;
-    public GENDER gender;
-    public double salary;
+    private String id;
+    private String name;
+    private LocalDate birthday;
+    private GENDER gender;
+    private double salary;
+
+
+    public double getSalary(){
+        return this.salary;
+    }
+
+    public GENDER getGender(){
+        return this.gender;
+    }
+
+    public String getID(){
+        return this.id;
+    }
+
+    public String setID(String id){
+        id = this.id;
+        return id;
+    }
+
+     public String getName(){
+        return this.name;
+    }
+
+    public String setName(String name){
+        name = this.name;
+        return name;
+    }
 
     public Employee(String id, String name, LocalDate birthday, GENDER gender, double salary) {
         this.id = id;

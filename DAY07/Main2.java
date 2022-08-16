@@ -32,7 +32,7 @@ public class Main2 {
 
                 for (int i = 0; i < 6; i++) { // chuyen student vao user array
                         user[i] = (User) student[i]; // using super class reference and using typecasting 
-                                //creat a reference variable superclass by refering 
+                                //creat a reference variable superclass by refering subclass object
                 }
 
                 teacher[0] = new Teacher("gv1", "nguyen xuan nam", GENDER.MALE, User.setBirthDay("01-01-1988"),

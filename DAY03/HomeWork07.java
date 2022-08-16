@@ -29,11 +29,9 @@ public class HomeWork07 {
       }
       System.out.printf("Thoi gian la: %02d:%02d:%02d", hour, minute, sec);
     } else {
-      for (int i = 0; number > day; i++) {
-        int numberToTime = number - i * day;
-        if (numberToTime <= 0) {
-          break;
-        }
+     
+        int numberToTime = number % (24*60*60 );
+       
         if (numberToTime == 0) {
           System.out.println("Thoi gian la: 00:00:00");
         } else {
@@ -58,5 +56,5 @@ public class HomeWork07 {
     }
 
   }
-  }
+  
 

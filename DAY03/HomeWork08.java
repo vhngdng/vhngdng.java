@@ -12,7 +12,6 @@ public class HomeWork08 {
     for (int i = 0; i < str.length(); i++) {
       char character = str.charAt(i);
       if(check == false){
-          check = false;
           break;
         }
       for(int j = i + 1; j < str.length(); j++){     
