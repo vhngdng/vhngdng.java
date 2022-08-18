@@ -26,24 +26,6 @@ public class Main {
         System.out.println("==============================================================");
 
         // Tim theo ten
-
-        // Tim theo ID
-
-        // System.out.println("Hay nhap ID muon tim: ");
-        // int idNumber = scanner.nextInt();
-        // Product productFoundByID = null;
-        // for (Product list: products) {
-        // if (list.getId() == idNumber) {
-        // productFoundByID = list;
-        // }
-        // }
-
-        // if (productFoundByID == null) {
-        // System.out.println("Khong tim thay id nay");
-        // }else{
-        // System.out.println(productFoundByID.toString());
-        // }
-        // Tim theo ten
         findByName();
         System.out.println("===============================================");
         // Tim theo ID
