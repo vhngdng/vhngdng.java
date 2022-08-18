@@ -133,6 +133,7 @@ public class Main {
 
     // Tim cac san pham co so luong duoi 5
     public static void unitBelow5() {
+        System.out.println("San pham co so luong duoi 5 la: ");
         List<Product> productBelow5Unit = new ArrayList<>();
         for (Product i : products) {
             if (i.getAmount() < 5) {
